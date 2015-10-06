@@ -1,0 +1,245 @@
+@import url(http://fonts.googleapis.com/css?family=Strait);
+@import url(http://fonts.googleapis.com/css?family=Cabin);
+
+body {
+		 text-align: center;
+		 font-size: 16px;
+		 min-height: 100%;
+		 font-family: 'Strait', Arial;
+		 line-height: 25px;
+		 background:#fff;
+	  }
+
+h1 {
+	font-size: 34px;
+}
+
+p {
+	 margin: 0.5em 0 0.83em;
+	 text-transform: inherit;
+	 font-size: 1em;
+	 font-family: 'Strait', Arial;
+	 line-height: 1.8em;
+	 font-weight: 400;
+	}
+
+p.nav {
+		 font-size: 20px;
+		 text-align:center;
+		 margin: 0px;
+		 color: rgba(51, 51, 51, 1);
+		 width: 100%;
+		 padding: 0 0 0.5em 0;
+	  }
+
+img { max-width:100%;
+	  vertical-align: middle; } 
+
+img.soc {
+			width: 2%;
+			padding: 0 0.2em;
+		}
+
+img.soc:hover { opacity: 0.3; }
+
+
+img.skills { width: 4%;
+			 padding: 0 0.2em;
+		   }
+
+/********** DIVIDERS *********/
+
+.intro {
+		  margin-top:0;
+		  padding: 6em 0 5em 0;
+		  background-color: #f94a32;
+	   }
+
+.content {
+	padding: 2em 0;
+	margin: 250px auto;
+	}
+
+div.content { background: #ffffff; }
+
+header { 
+	background: #f94a32; 
+	padding-top: 50px;
+}
+
+
+
+/********** GRAY TEXT BOXES *********/
+.text, .work {
+		 font-size: 1em;
+		 line-height: 1.5em;
+		 margin: 1.8em auto;
+		 font-family: 'Strait', Arial;
+		 text-align: center;
+		 color: #f9f2f2;
+		}
+
+.text { 
+	background: #333;
+	width: 45%; 
+	padding: 0.33em 1em; }
+
+.text a:link, .text a:visited { color: #f94a32; }
+
+/***** PORTFOLIO ******/
+
+.work {
+	width: 63%;
+	clear:both;
+	min-height: 12.5em;
+	}
+
+.work-img { float: left;
+			width: 50%;
+			margin-bottom: 3em;
+			margin-right: 1em;
+		  }
+.work-img img { border: 1px dashed #aaaaaa; 
+				padding: 0.3em;}
+
+.work-info { float: right;
+			 text-align:justify;
+			 font-size: 15px;
+			 background:#333;
+			 padding: 0.5em 1em;
+			 width: 44%;
+			 height: 100%;
+			}
+
+.back-to-top {
+	position: fixed;
+	z-index: 100;
+	width:100%;
+	display:none;
+}
+
+/********** MISC *************/
+
+footer { clear: both; 
+		 text-align: center;
+		}
+hr {
+	border-top:1px solid #bababa; 
+	border-left:none; 
+	border-right: none;
+	border-bottom: 1px dashed #ffa599;
+	width: 47%;
+	height: 2px;
+	margin: 3em auto;
+	clear:both;
+}
+
+hr.spacer {
+	border-top: 1px solid #ccc;
+	border-left:none;
+	border-right:none;
+	border-bottom: none;
+	height:1px;
+}
+
+b { color: #f94a32;}
+
+em {
+	 font-weight: 600;
+	 background: #f94a32;
+	 color: #333333;
+	 padding: 0.2em;
+}
+
+u { border-bottom: 2px solid #f94a32; }
+
+strong {
+	 font-family: Georgia;
+	 font-weight: 600;
+	 font-size: 0.95em;
+	 color: #f94a32;
+	 border-bottom: dotted 2px #bababa;
+	 line-height: 1.933em;
+}
+
+strong.nav {border: none;}
+
+strong.work-heading {font-size:1.15em;}
+
+a, a:link, a:visited {
+					 color: #f94a32;
+					 line-height: 1.65em;
+					 padding: 0px;
+					 font-size: 1em;
+					 font-family: 'Cabin', Tahoma;
+					 text-decoration:none;
+					 font-variant: small-caps;
+				  }
+.nav a{ color: #ffcdc6; }
+
+a:hover { opacity: 0.6;
+		  border-bottom:1px dashed #fff;}
+
+a.slide {
+		 color: #f94a32;
+		 font-size: 1em;
+		 line-height: 1.65em;
+		}
+
+/************ MEDIA QUERIES **************/
+
+@media screen and (max-width: 1024px) {
+										.ss-style-roundedsplit::before, .ss-style-roundedsplit::after { height:9%; }
+										p { width: 100%; }
+										.work { width: 80%; }
+									  } 
+
+@media screen and (max-width: 768px) { 
+										.ss-style-roundedsplit::before, .ss-style-roundedsplit::after { height:9%; }
+										.text {width: 67%;}
+										.work { width: 90%; }
+									}
+
+@media screen and (max-width: 640px) { 
+										.ss-style-roundedsplit::before, .ss-style-roundedsplit::after { height:9%; }
+										.text {width: 67%;}
+										.work { width: 90%; }
+										.work-img, .work-info { 
+													float:none;
+													margin:auto;
+													width:80%;
+												  }
+									  } 
+
+
+@media screen and (max-width: 480px) {	
+										.ss-style-roundedsplit::before, .ss-style-roundedsplit::after { height:7.9%; }	
+										.text, .work { width: 90%; }
+										img.soc {
+											width: 8%;
+											padding: 0 0.5em;
+											}
+
+										.work-img, .work-info { 
+													float:none;
+													margin:auto;
+													width:90%;
+												  }
+									  } 
+
+@media screen and (max-width: 320px) {
+										body { margin: 10px; }
+										img.soc {
+											width: 10%;
+											padding: 0 0.5em;
+											}
+										.text, .work { width: 100%; }
+
+										.work-img, .work-info { 
+													float:none;
+													margin:auto;
+													width:100%;
+													display: block;
+												  }
+
+									   } 
