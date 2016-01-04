@@ -11,9 +11,15 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-
+		<a class="top-of-page"></a>
 		<header>
-			<h1><span>Hello!</span> I'm Carmen and I write <code>code</code>.</h1>
+			<h1>
+				<span class="greeting">Hello!</span> I'm Carmen and I write 
+				<div class="type-effect">
+					<span class="backup-type">code</span>
+				</div> 
+				<span class="type-cursor"></span>
+			</h1>
 
 			<nav>
 				<a href="https://github.com/choww" target="_blank"><i class="fa fa-github"></i> github</a> | <a href="https://twitter.com/chowcar"><i class="fa fa-twitter"></i> twitter</a> | <a href="#contact"><i class="fa fa-pencil-square-o"></i> contact</a>
@@ -44,7 +50,7 @@
 				<h3><a href="http://choww.github.io/hi-mars">Hi Mars</a></h3>
 				<div class="text">
 					[work in progress]<br>
-					Displays and graphs Mars weather data obtained from the <a href="http://marsweather.ingenology.com" target="_blank">{ MAAS }</a> API.<br>
+					Displays and graphs Mars weather data obtained from the <a href="http://marsweather.ingenology.com" target="_blank">{MAAS}</a> API.<br>
 					<div class="stack">Angular.js, D3.js</div>
 				</div>
 			</p>
@@ -86,8 +92,10 @@
 			</p>
 
 		</footer>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"</script>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<div class="to-top"><a href="#top-of-page"><i class="fa fa-arrow-circle-up"></i> Top</a></div>
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/slick.min.js"></script>
 		<script src="js/script.js"></script>
 
