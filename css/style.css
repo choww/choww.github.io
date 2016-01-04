@@ -149,7 +149,7 @@ strong {
 	 font-size: 0.95em;
 	 color: #f94a32;
 	 border-bottom: dotted 2px #bababa;
-	 line-height: 1.933em;
+	 line-height: 1.93em;
 }
 
 a, a:link, a:visited {
@@ -170,7 +170,7 @@ a:hover {
 
 /************ MEDIA QUERIES **************/
 
-@media screen and (max-width: 1143px) {
+@media only screen and (max-device-width: 1143px) {
 										p { width: 100%; }
 										section, footer {width:50%;}
 										.slick-prev {
@@ -182,43 +182,60 @@ a:hover {
 										}
 									}
 
-@media screen and (max-width: 890px) { 
+@media only screen and (max-device-width: 890px) { 
+										h1, span {
+											font-size: 55px;
+											line-height: 1em;
+										}
+
 										section, footer { width:75%;}
+
+										header a { font-size: 1.7em}
 										
-										.text {
-											font-size: 1em;
+										div .text {
+											font-size: 1.5em;
 											padding: 0.5em 1em;
 											width: 70%;
 										}	
 									}
 
-@media screen and (max-width: 640px) { 							
-										.text {
-											width: 80%;
-											}										
-									  } 
 
+@media only screen and (max-device-width: 598px)  {
 
-@media screen and (max-width: 596px) {	h1{
-											font-size: 40px;
+										h1, span {
+											font-size: 55px;
 											line-height: 1em;
 										}
-										section,footer {width:90%;}
-										.text { width: 100%; }
+										header a { font-size: 2em; }
+										section,footer { width:60%; }
+
+										header .text {
+											line-height: 1em;
+										}
+
+										div .text { 
+											font-size: 1.5em;
+											line-height: 1em;
+											width: 100%; }
 
 										.slick-prev {
 										    left: 20px;
 										}
 
 										.slick-next {
-										    right: 20px;
+										    right: 80px;
 										}
 									  } 
 
-@media screen and (max-width: 451px) {
+@media only screen and (max-device-width: 451px) {
 									
 										body {  
 											overflow-x: hidden;}
+
+										h1{
+											font-size: 40px;
+											line-height: 1em;
+										}
 
 										header {padding: 100px 0 20px 0;}
 
@@ -235,6 +252,47 @@ a:hover {
 										.slick-next {
 										    right: -5px;
 										}
+
+
+									   } 
+
+@media only screen and (max-device-width: 360px) {
+									
+										body {  
+											overflow-x: hidden;}
+
+										header {padding: 100px 0 20px 0;}
+
+										h1, span {
+											font-size: 60px;
+											line-height: 1em;
+										}
+
+										header .text { 
+											font-size: 0.85em;
+											line-height: 0.85em;
+											padding: 20px 10px; }
+
+										header a { font-size: 40px }
+
+										section, footer {
+											margin: auto;
+											width: 95%;
+										}
+
+										div .text{ 
+											width: 100%;
+											font-size: 1.5em;
+										}
+
+										.slick-prev {
+										    left: 200px;
+										}
+
+										.slick-next {
+										    right: 200px;
+										}
+
 
 
 									   } 
