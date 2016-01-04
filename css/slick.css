@@ -139,20 +139,18 @@
     background: none;
 }
 
-.slick-prev:before,
-.slick-next:before
+.slick-prev:before, .slick-next:before
 {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1;
     color: #000;
 }
 
-.slick-prev:before
-{
-    content: '<<';
-}
+.slick-prev:before { content: '<<'; }
+.slick-next:before {  content: '>>'; }
 
-.slick-next:before
-{
-    content: '>>';
+@media only screen and (max-device-width: 500px) {
+            .slick-prev:before, .slick-next:before
+                { font-size: 25px; }
+
 }

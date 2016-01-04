@@ -24,9 +24,6 @@ h3 {
 }
 
 p {
-	 margin: 0.5em 0 0.83em;
-	 text-transform: inherit;
-	 font-size: 1em;
 	 font-family: 'Strait', Trebuchet, Arial;
 	 line-height: 1.8em;
 	 font-weight: 400;
@@ -91,27 +88,16 @@ footer { clear: both;
 		  padding:2px;
 		}
 
-
-.back-to-top {
-	position: fixed;
-	z-index: 100;
-	width:100%;
-	display:none;
-}
-
 /********** SLIDER ***********/
 .img-slider img {
 	width: 275px;
 	margin: auto;
 }
-
-.slick-prev {
-    left: 50px;
-}
-
-.slick-next {
-    right: 50px;
-}
+.img-slider {width: 300px !important;
+			margin: auto;
+		}
+.slick-prev { left: -30px; }
+.slick-next { right: -30px; }
 
 /********** MISC *************/
 
@@ -138,7 +124,7 @@ em {
 	 font-weight: 600;
 	 background: #ff5139;
 	 color: #333333;
-	 padding: 0.2em;
+	 padding: 2px;
 }
 
 u { border-bottom: 2px solid #f94a32; }
@@ -152,11 +138,12 @@ strong {
 	 line-height: 1.93em;
 }
 
+nav { font-size: 1.2em; }
+
 a, a:link, a:visited {
 					 color: #f94a32;
 					 line-height: 1.65em;
 					 padding: 0px;
-					 font-size: 1.2em;
 					 font-family: Tahoma;
 					 text-decoration:none;
 					 font-variant: small-caps;
@@ -168,18 +155,50 @@ a:hover {
 }
 
 
-/************ MEDIA QUERIES **************/
+/************ MEDIA QUERIES - LAPTOP **************/
+@media only screen and (min-width: 824px) and (max-width: 1060px) {
+										.slick-prev { left: -10px; }
+										.slick-next { right: -10px; }
+									}
+@media only screen and (min-width: 628px) and (max-width: 823px) {
+										section, footer { width: 60%; }
+										.slick-prev { left: -10px; }
+										.slick-next { right: -10px; }
+									}
 
+@media only screen and (min-width: 463px) and (max-width: 627px) {
+										body {  
+											overflow-x: hidden;}
+
+										h1, span{
+											font-size: 45px;
+											line-height: 1em;
+										}
+
+										header { padding: 100px 0 20px 0; }
+										header .text { font-size: 1em; }
+
+										section, footer {
+											width: 75%;
+											margin: auto;
+										}
+
+										div .text{ 
+											width: 100%;
+											font-size: 1em;
+										}
+
+										.slick-prev { left: -15px; }
+										.slick-next { right: -15px; }
+									} 
+
+/************ MEDIA QUERIES - MOBILE **************/
 @media only screen and (max-device-width: 1143px) {
 										p { width: 100%; }
 										section, footer {width:50%;}
-										.slick-prev {
-											    left: 40px;
-											}
 
-										.slick-next {
-										    right: 40px;
-										}
+										.slick-prev { left: -40px; }
+										.slick-next {  right: -40px; }
 									}
 
 @media only screen and (max-device-width: 890px) { 
@@ -188,15 +207,26 @@ a:hover {
 											line-height: 1em;
 										}
 
-										section, footer { width:75%;}
+										h2 { font-size: 40px; }
 
-										header a { font-size: 1.7em}
+										section, footer { width:67%;}
+
+										nav { font-size: 25px; }
+
+										header .text {
+											font-size: 0.9em;
+											line-height: 1em;
+										}
 										
 										div .text {
-											font-size: 1.5em;
+											font-size: 1.1em;
+											line-height: 1em;
 											padding: 0.5em 1em;
 											width: 70%;
 										}	
+
+										.slick-prev {  left: -30px; }
+										.slick-next {  right: -30px; }
 									}
 
 
@@ -206,7 +236,7 @@ a:hover {
 											font-size: 55px;
 											line-height: 1em;
 										}
-										header a { font-size: 2em; }
+										nav { font-size: 2em; }
 										section,footer { width:60%; }
 
 										header .text {
@@ -218,50 +248,46 @@ a:hover {
 											line-height: 1em;
 											width: 100%; }
 
-										.slick-prev {
-										    left: 20px;
-										}
-
-										.slick-next {
-										    right: 80px;
-										}
+										.slick-prev { left: -25px; }
+										.slick-next { right: -25px; }
 									  } 
 
-@media only screen and (max-device-width: 451px) {
+@media only screen and  (max-device-width: 451px) {
 									
 										body {  
 											overflow-x: hidden;}
 
 										h1{
-											font-size: 40px;
+											font-size: 60px;
 											line-height: 1em;
 										}
 
-										header {padding: 100px 0 20px 0;}
+										h2 {font-size: 50px; }
 
-										section, footer, .text {margin: auto;}
-										.text{ 
+										header { padding: 100px 0 20px 0; }
+										header .text { font-size: 0.9em; }
+
+										section, footer {
+											width: 75%;
+											margin: auto;
+										}
+
+										div .text{ 
 											width: 100%;
-											font-size: 0.95em;
+											font-size: 1em;
 										}
 
-										.slick-prev {
-										    left: -5px;
-										}
-
-										.slick-next {
-										    right: -5px;
-										}
-
-
-									   } 
+										.slick-prev { left: -25px; }
+										.slick-next { right: -25px; }
+									} 
 
 @media only screen and (max-device-width: 360px) {
 									
 										body {  
 											overflow-x: hidden;}
 
-										header {padding: 100px 0 20px 0;}
+										header {padding: 100px 0 20px 0;
+										}
 
 										h1, span {
 											font-size: 60px;
@@ -270,10 +296,10 @@ a:hover {
 
 										header .text { 
 											font-size: 0.85em;
-											line-height: 0.85em;
+											line-height: 40px;
 											padding: 20px 10px; }
 
-										header a { font-size: 40px }
+										nav { font-size: 45px; }
 
 										section, footer {
 											margin: auto;
@@ -281,18 +307,9 @@ a:hover {
 										}
 
 										div .text{ 
-											width: 100%;
-											font-size: 1.5em;
+											font-size: 1em;
 										}
 
-										.slick-prev {
-										    left: 200px;
-										}
-
-										.slick-next {
-										    right: 200px;
-										}
-
-
-
-									   } 
+										.slick-prev { left: -25px; }
+										.slick-next { right: -25px; }
+									} 
