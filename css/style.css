@@ -118,6 +118,7 @@ code {
 
 .stack {
 	color: #ff5139;
+	font-style: italic;
 }
 
 em {
@@ -250,6 +251,7 @@ a:hover {
 
 										.slick-prev { left: -25px; }
 										.slick-next { right: -25px; }
+
 									  } 
 
 @media only screen and  (max-device-width: 451px) {
