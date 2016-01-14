@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	/***** TYPE EFFECT *****/
 
-	setInterval(function() { blinkCursor() }, 1500);
+	setInterval(function() { blinkCursor() }, 1600);
 	function blinkCursor() {
-		$('.type-cursor').fadeTo(200, 0).fadeTo(100,1);
+		$('.type-cursor').fadeTo(150, 0).delay(200).fadeTo(100,1);
 	}
 
 	$('.backup-type').hide();	// in case jQ doesn't load

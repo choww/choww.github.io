@@ -6,7 +6,7 @@ body {
 		 font-size: 16px;
 		 min-height: 100%;
 		 margin: 0;
-		 font-family: 'Strait', Trebuchet, Arial;
+		 font-family: 'Strait', Tahoma, Helvetica;
 		 line-height: 25px;
 		 background:#fff;
 	  }
@@ -25,7 +25,7 @@ h3 {
 }
 
 p {
-	 font-family: 'Strait', Trebuchet, Arial;
+	 font-family: 'Strait', Tahoma, Helvetica;
 	 line-height: 1.8em;
 	 font-weight: 400;
 	}
@@ -34,7 +34,7 @@ a, a:link, a:visited {
 					 color: #f94a32;
 					 line-height: 1.65em;
 					 padding: 0px;
-					 font-family: Tahoma;
+					 font-family: Tahoma, Helvetica;
 					 text-decoration:none;
 					 margin: 0 5px;
 					 font-variant: small-caps;
