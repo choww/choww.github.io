@@ -344,9 +344,12 @@ strong {
 										}
 
 										div .text{ 
-											font-size: 1em;
+											font-size: 0.90em;
 										}
-										.to-top { right: 0; }
+										.to-top { 
+                      right: 0;
+                      font-size: 0.85em;
+                     }
 										.slick-prev { left: -25px; }
 										.slick-next { right: -25px; }
 									} 
