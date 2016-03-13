@@ -5,7 +5,7 @@
 
 body {
   text-align: center;
-  font-size: 16px;
+  font-size: 1.05em;
   color: #fff;
   min-height: 100%;
   margin: 0;
@@ -21,12 +21,12 @@ h1 {
 
 h2 {
   font-family: 'Pacifico', cursive;
-  font-size: 34px;
-  color: #ddd;
+  font-size: 32px;
+  color: #ccc;
 }
 
 h3 {
-	font-size: 26px;
+	font-size: 24px;
 }
 
 p {
@@ -38,18 +38,14 @@ p {
 em {
   font-weight: 600;
   background: #ff5139;
-  color: #333333;
+  color: #333;
   padding: 2px;
 }
 
-u { border-bottom: 2px solid #f94a32; }
-
 strong {
-  font-family: Georgia;
+  font-family: Tahoma, Helvetica;
   font-weight: 600;
-  font-size: 0.95em;
-  color: #f94a32;
-  border-bottom: dotted 2px #bababa;
+  font-size: 1em;
   line-height: 1.93em;
 }
 
@@ -57,7 +53,7 @@ hr {
   border-top: none;
   border-left:none;
   border-right: none;
-  border-bottom: 1px dashed #f94a32;
+  border-bottom: 1px dashed #fff;
   height: 2px;
   margin: 2em auto;
   padding: 2px;
@@ -72,22 +68,14 @@ hr {
   color: #f94a32;
 }
 
-section, footer {
-	width: 40%;
+header, section, footer {
+	width: 50%;
+  margin: auto;
 }
-
-section {
-	padding: 2em 0;
-	margin: 10px auto;
-	}
 
 header {
-	background: #333;
 	padding-top: 150px;
-	padding-bottom: 50px;
 }
-
-header .text {width: inherit;}
 
 nav {
 	font-size: 1.2em;
@@ -97,7 +85,6 @@ nav {
 
 footer { clear: both;
   text-align: center;
-  margin: auto;
   padding-bottom: 50px;
 }
 
@@ -113,7 +100,6 @@ footer { clear: both;
 }
 
 .text {
-	background: #333;
 	padding: 1em;
 }
 
@@ -174,7 +160,7 @@ footer { clear: both;
 
 /********** STATES **********/
 
-a, a:link, a:visited {
+a:link, a:visited {
   color: #f94a32;
   line-height: 1.65em;
   padding: 0px;
@@ -192,14 +178,10 @@ nav a:link,
 nav a:visited,
 nav a:active { color: #fff; }
 
+nav a:hover { color: #f94a32; }
+
 .text a:link, .text a:visited {
 	font-size: 1em;
-	color: #f94a32;
-}
-
-.text a:hover { color: #fff;
-  background: #f94a32;
-  padding:2px;
 }
 
 /************ MEDIA QUERIES - LAPTOP **************/
@@ -260,8 +242,6 @@ nav a:active { color: #fff; }
 
 	section, footer { width:67%;}
 
-	nav { font-size: 25px; }
-
 	header .text {
 		font-size: 0.9em;
 		line-height: 1em;
@@ -284,7 +264,7 @@ nav a:active { color: #fff; }
   	font-size: 55px;
   	line-height: 1em;
   }
-  nav { font-size: 2em; }
+
   section,footer { width:60%; }
 
   header .text {
@@ -336,17 +316,21 @@ nav a:active { color: #fff; }
   header {padding: 100px 0 20px 0;
   }
 
-  h1, .greeting {
-  	font-size: 60px;
+  .greeting { font-size: 40px; }
+
+  h1  {
+  	font-size: 35px;
   	line-height: 1em;
   }
 
+  h2 { font-size: 30px; }
+
   header .text {
-  	font-size: 0.85em;
-  	line-height: 40px;
+  	font-size: 1em;
+  	line-height: 20px;
   	padding: 20px 10px; }
 
-  nav { font-size: 45px; }
+  nav { font-size: 14px; }
 
   section, footer {
   	margin: auto;
@@ -358,6 +342,7 @@ nav a:active { color: #fff; }
   }
   .to-top {
     right: 0;
+    width: 80px;
     font-size: 0.85em;
    }
   .slick-prev { left: -25px; }
