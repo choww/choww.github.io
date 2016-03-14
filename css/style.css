@@ -84,6 +84,7 @@ nav {
 
 
 footer { clear: both;
+  margin-top: 1%;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -125,6 +126,7 @@ footer { clear: both;
 .type-effect {
 	font-family: Courier;
 	font-weight: 600;
+  font-size: 34px;
 	display: inline-block;
 }
 
@@ -200,22 +202,19 @@ nav a:hover { color: #f94a32; }
 	body {
 		overflow-x: hidden;}
 
-	h1, .greeting{
+	h1, 
+  .greeting, 
+  .type-effect {
 		font-size: 45px;
 		line-height: 1em;
 	}
 
 	header { padding: 100px 0 20px 0; }
-	header .text { font-size: 1em; }
 
-	section, footer {
+	header, section, footer {
 		width: 75%;
 		margin: auto;
-	}
-
-	div .text{
-		width: 100%;
-		font-size: 1em;
+    font-size: 1em;
 	}
 
 	.to-top { right: 0; }
@@ -240,15 +239,10 @@ nav a:hover { color: #f94a32; }
 
 	h2 { font-size: 40px; }
 
-	section, footer { width:67%;}
+  header, section, footer { width:70%;}
 
-	header .text {
+  .text {
 		font-size: 0.9em;
-		line-height: 1em;
-	}
-
-	div .text {
-		font-size: 1.1em;
 		line-height: 1em;
 		padding: 0.5em 1em;
 		width: 70%;
@@ -260,19 +254,17 @@ nav a:hover { color: #f94a32; }
 
 
 @media only screen and (max-device-width: 598px)  {
-  h1, .greeting {
+  h1,
+  .greeting,
+  .type-effect {
   	font-size: 55px;
   	line-height: 1em;
   }
 
-  section,footer { width:60%; }
+  header, section,footer { width: 70%; }
 
-  header .text {
-  	line-height: 1em;
-  }
-
-  div .text {
-  	font-size: 1.5em;
+  .text {
+  	font-size: 0.9em;
   	line-height: 1em;
   	width: 100%; }
 
@@ -285,7 +277,7 @@ nav a:hover { color: #f94a32; }
 	body {
 		overflow-x: hidden;}
 
-	h1{
+	h1 {
 		font-size: 60px;
 		line-height: 1em;
 	}
@@ -293,17 +285,16 @@ nav a:hover { color: #f94a32; }
 	h2 {font-size: 50px; }
 
 	header { padding: 100px 0 20px 0; }
-	header .text { font-size: 0.9em; }
 
-	section, footer {
+	header, section, footer {
 		width: 75%;
 		margin: auto;
+    font-size: 0.85em;
 	}
 
-	div .text{
-		width: 100%;
-		font-size: 1em;
-	}
+  nav { font-size: 0.85em; }
+
+  .to-top { font-size: 0.85em; }
 
 	.slick-prev { left: -25px; }
 	.slick-next { right: -25px; }
@@ -316,7 +307,9 @@ nav a:hover { color: #f94a32; }
   header {padding: 100px 0 20px 0;
   }
 
-  .greeting { font-size: 40px; }
+  .greeting,
+  .type-effect
+   { font-size: 40px; }
 
   h1  {
   	font-size: 35px;
@@ -325,26 +318,24 @@ nav a:hover { color: #f94a32; }
 
   h2 { font-size: 30px; }
 
-  header .text {
-  	font-size: 1em;
+  .text {
+  	font-size: 0.9em;
   	line-height: 20px;
   	padding: 20px 10px; }
 
-  nav { font-size: 14px; }
+  nav { font-size: 0.85em; }
 
-  section, footer {
+  header, section, footer {
   	margin: auto;
   	width: 95%;
   }
 
-  div .text{
-  	font-size: 0.90em;
-  }
   .to-top {
     right: 0;
     width: 80px;
     font-size: 0.85em;
    }
+
   .slick-prev { left: -25px; }
   .slick-next { right: -25px; }
 }
