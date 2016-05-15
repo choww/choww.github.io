@@ -49,6 +49,12 @@ strong {
   line-height: 1.93em;
 }
 
+.curr-stack {
+  font-family: 'Strait', Tahoma, Helvetica;
+  background:  #f94a32;
+  color: #333;
+}
+
 hr {
   border-top: none;
   border-left:none;
