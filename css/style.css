@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 /********** BASE **********/
-
 body {
   text-align: center;
   font-size: 1.05em;
@@ -22,7 +21,7 @@ h1 {
 h2 {
   font-family: 'Pacifico', cursive;
   font-size: 32px;
-  color: #ccc;
+  color: #ccc
 }
 
 h3 {
@@ -88,13 +87,11 @@ nav {
 	color: #fff;
 }
 
-
 footer { clear: both;
   margin-top: 1%;
   text-align: center;
   padding-bottom: 50px;
 }
-
 
 /********** LAYOUT - GRAY TEXT BOXES *********/
 .text {
@@ -109,7 +106,6 @@ footer { clear: both;
 .text {
 	padding: 1em;
 }
-
 
 /********** MODULE - SLIDERS ***********/
 .img-slider img {
@@ -160,13 +156,12 @@ footer { clear: both;
 }
 .top-of-page {margin:0;}
 
-
 .stack {
 	color: #ff5139;
 	font-style: italic;
 }
 
-/********** STATES **********/
+/********** STATES **********
 
 a:link, a:visited {
   color: #f94a32;
@@ -207,7 +202,6 @@ nav a:hover { color: #f94a32; }
 @media only screen and (min-width: 463px) and (max-width: 627px) {
 	body {
 		overflow-x: hidden;}
-
 	h1, 
   .greeting, 
   .type-effect {
@@ -258,7 +252,6 @@ nav a:hover { color: #f94a32; }
 	.slick-next {  right: -30px; }
 }
 
-
 @media only screen and (max-device-width: 598px)  {
   h1,
   .greeting,
@@ -273,15 +266,13 @@ nav a:hover { color: #f94a32; }
   	font-size: 0.9em;
   	line-height: 1em;
   	width: 100%; }
-
   .slick-prev { left: -25px; }
   .slick-next { right: -25px; }
 
 }
 
 @media only screen and  (max-device-width: 451px) {
-	body {
-		overflow-x: hidden;}
+	body { overflow-x: hidden;}
 
 	h1 {
 		font-size: 60px;
@@ -307,11 +298,9 @@ nav a:hover { color: #f94a32; }
 }
 
 @media only screen and (max-device-width: 360px) {
-  body {
-  	overflow-x: hidden;}
+  body { overflow-x: hidden; }
 
-  header {padding: 100px 0 20px 0;
-  }
+  header { padding: 100px 0 20px 0; }
 
   .greeting,
   .type-effect
