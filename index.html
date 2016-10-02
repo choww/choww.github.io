@@ -15,7 +15,7 @@
 		<a class="top-of-page"></a>
 		<header>
 			<h1>
-				<span class="greeting">Hello!</span> I'm Carmen and I write 
+				<span class="greeting">Hello!</span> I'm Carmen and I love writing
 				<div class="type-effect">
 					<span class="backup-type">code</span>
 				</div> 
@@ -23,71 +23,62 @@
 			</h1>
 
 			<nav>
-				<a href="https://github.com/choww" target="_blank"><i class="fa fa-github"></i> github</a> | 
-				<a href="https://twitter.com/chowcar" target="_blank"><i class="fa fa-twitter"></i> twitter</a> | 
-				<a href="https://ca.linkedin.com/in/carmenchoww" target="_blank"><i class="fa fa-linkedin"></i> linkedin</a> |
+				<a href="https://github.com/choww" target="_blank"><i class="fa fa-github"></i> github</a> 
+				<a href="https://twitter.com/chowcar" target="_blank"><i class="fa fa-twitter"></i> twitter</a> 
+				<a href="https://ca.linkedin.com/in/carmenchoww" target="_blank"><i class="fa fa-linkedin"></i> linkedin</a> 
 				<a href="#contact" id="contact-link"><i class="fa fa-pencil-square-o"></i> contact</a>
 			</nav>
 
-			<div class="text">
-				Junior full-stack web developer from Vancouver, BC who loves elegant code logic and intuitive user interfaces. My current stack is <strong class="curr-stack">Ruby on Rails</strong>, <strong class="curr-stack">Javascript/jQuery</strong> and <strong class="curr-stack">PostgreSQL</strong>, but I also have experience with Angular.js, Python, and Redis.<br/>
+			<div class="description">
+				Junior web developer from Vancouver, BC. Enthusiatic about clean, readable code and exploring new technologies! My current stack is <strong class="curr-stack">Ruby on Rails</strong>, <strong class="curr-stack">Javascript/jQuery</strong> and <strong class="curr-stack">PostgreSQL</strong>, but I also have experience with <span class="other-skills">Angular.js</span>, <span class="other-skills">Python</span>, and <span class="other-skills">Redis</span>.
 			</div>
 		</header>
 
 		<section>
-			<h2>Things I Build</h2>
-
+			<h2>Projects</h2>
+      <h4>Things I build in my spare time! More on my <a href="https://github.com/choww" target="_blank">github</a></h4>
 			<hr>
-
-      <div class="text">
-        <h3><a href="https://github.com/jpychan/music-festival-app" target="_blank">MusicXplore</a></h3>
+      <article>
+        <h3><a href="https://github.com/choww/timewise" target="_blank">Timewise</a></h3>
+        <p><span class="status incomplete">In progress</span></p>
         <p>
-          A music festival finder and trip planning application built in collaboaration with 3 other students from Lighthouse Labs. <br>
-          I was in charge of building the dyanmic search form, scraping <a href="https://www.musicfestivalwizard.com" target="_blank">Music Festival Wizard</a> for all the festival & artist data and storing it in our database, calculating costs of driving to each festival by converting a user's location to latitude and longitude, and using Redis to allow users to "favorite" music festivals and compare travel details of all favorited festivals without having to sign up.
+          A project <strong>time tracker and task manager</strong> for developers. Complete with analytics to show breakdown of time spent working on certain languages/frameworks. 
         </p>
-        <div class="stack">Ruby on Rails, jQuery, PostgreSQL, Redis</div>
-      </div>
+        <div class="stack">Rails 5, Angular.js, PostgreSQL</div>
+      </article>
 
-      <div class="text">
+      <article>
         <h3><a href="https://github.com/choww/rotten-mongoose" target="_blank">Rotten Mongoose</a></h3>
+        <p><span class="status complete">Complete</span></p>
         <p>
-          [semi-live. Follow the title link for details]<br>
-          A Rotten Tomatoes clone. Movie review site that lets users see and submit movies as well as reviews for those movies.<br>
+          A Rotten Tomatoes clone. <strong>Movie review</strong> site that lets users see and submit movies as well as reviews for those movies.<br>
           Movie lists and reviews are dynamically updated via AJAX.
         </p>
-        <div class="stack">Ruby on Rails, jQuery, Bootstrap/LESS, PostgreSQL</div>
-      </div>      
+        <div class="stack">Rails 4, jQuery, Bootstrap/LESS, PostgreSQL</div>
+      </article>
 
-			<div class="text">
-				<h3><a href="https://github.com/tiluu/go-eggplant" target="_blank">Go Eggplant</a></h3> 
-				<p>
-          [work in progress]<br>
-				  A web application for planning trip activities with friends.<br>
-           Includes an itinerary calendar and suggestion box built using Angular.js. Users can search for ideas via the Yelp and Foursquare APIs and add activities to the suggestion box.<br>
-          Front-end work by <a href="http://github.com/tiluu" target="_blank">tiluu</a>
-        </p>
-
-				<div class="stack">Ruby on Rails, Angular.js, Rspec (tests), PostgreSQL</div>
-		  </div>
-
-	  	<div class="text">
+      <article>
 	  		<h3><a href="https://github.com/choww/hi-mars">Hi Mars</a></h3>
         <p>
-	  		  A Mars weather report web application. Version 1 live <a href="http://choww.github.io/hi-mars" target="_blank">here</a><br>
+          <span class="status complete">Complete</span> - <a href="http://choww.github.io/hi-mars" target="_blank">version 1</a>
+        </p>
+        <p>
+	  		  A <strong>Mars weather report</strong> web application.<br>
           Data were obtained from the <a href="http://marsweather.ingenology.com" target="_blank">{MAAS}</a> API and displayed using Angular.js. The line chart that display temperature changes over time was built using D3.js.
         </p>
 
 	  	  <div class="stack">Angular.js, D3.js, CSS/SASS</div>
-	  	</div>
+      </article>
 
-	  	<div class="text">
+      <article>
 	  		<h3><a href="https://github.com/choww/hpc-areas" target="_blank">Hippocampal Areas Calculator</a></h3>
+        <p><span class="status complete">Complete</span></p>
 	  		<p>
-          A desktop application that calculates hippocampal volume and cell density based on data (cell counts and region areas) entered in Excel.<br>
+          A desktop application that <strong>calculates hippocampal volume and cell density</strong> based on data (cell counts and region areas) entered in Excel.<br>
           Designed to automate some of the workflow at my previous workplace. Reading and writing to Excel was faciliated with the xlutils module, and the GUI was built using wxPython.
         </p>
 	  		<div class="stack">Python</div>
-	  	</div>
+      </article>
 		</section>
 
 		<section>
@@ -104,6 +95,7 @@
 			<a name="contact"></a>
 			
 			<h2>Contact Me</h2>
+      <h4>For side projects or just for a chat!</h4>
 			<hr>
 			<p>
 				<i class="fa fa-envelope"></i> Email: <a href="mailto: carmenn.choww@gmail.com">carmenn.choww@gmail.com</a>

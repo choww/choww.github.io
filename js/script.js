@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function($) {
 	/***** TYPE EFFECT *****/
 
 	setInterval(function() { blinkCursor() }, 1600);

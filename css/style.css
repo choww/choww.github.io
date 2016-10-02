@@ -19,9 +19,10 @@ h1 {
 }
 
 h2 {
+  color: #ccc;
   font-family: 'Pacifico', cursive;
   font-size: 32px;
-  color: #ccc
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -43,15 +44,19 @@ em {
 
 strong {
   font-family: Tahoma, Helvetica;
+  font-size: 14px;
   font-weight: 600;
-  font-size: 1em;
-  line-height: 1.93em;
 }
 
 .curr-stack {
   font-family: 'Strait', Tahoma, Helvetica;
   background:  #f94a32;
   color: #333;
+}
+
+.other-skills { 
+  border-bottom: 2px solid #f94a32;
+  text-decoration: underline;
 }
 
 hr {
@@ -74,8 +79,8 @@ hr {
 }
 
 header, section, footer {
-	width: 50%;
-  margin: auto;
+	width: 55%;
+  margin: 20px auto;
 }
 
 header {
@@ -87,24 +92,23 @@ nav {
 	color: #fff;
 }
 
+article { 
+  color: #f9f2f2;
+  display: inline-block;
+  font-family: 'Strait', Arial;
+  font-size: 17px;
+  line-height: 20px;
+  margin: auto;
+  padding: 10px;
+  text-align: justify;
+  vertical-align: top;
+  width: 46%; 
+}
+
 footer { clear: both;
   margin-top: 1%;
   text-align: center;
   padding-bottom: 50px;
-}
-
-/********** LAYOUT - GRAY TEXT BOXES *********/
-.text {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin: 1em auto;
-  font-family: 'Strait', Arial;
-  text-align: center;
-  color: #f9f2f2;
-}
-
-.text {
-	padding: 1em;
 }
 
 /********** MODULE - SLIDERS ***********/
@@ -156,12 +160,22 @@ footer { clear: both;
 }
 .top-of-page {margin:0;}
 
+.description { margin: 30px auto; }
+
 .stack {
 	color: #ff5139;
 	font-style: italic;
 }
 
-/********** STATES **********
+.status { 
+  color: #fff; 
+  font-variant: small-caps;
+  padding: 3px;
+}
+/********** STATES **********/
+
+.status.incomplete { background: #0074ba; }
+.status.complete { background: #95bd00; }
 
 a:link, a:visited {
   color: #f94a32;
@@ -179,13 +193,13 @@ a:hover {
 
 nav a:link,
 nav a:visited,
-nav a:active { color: #fff; }
+nav a:active { 
+  color: #fff; 
+  font-weight: bold;
+  margin: auto 10px;
+}
 
 nav a:hover { color: #f94a32; }
-
-.text a:link, .text a:visited {
-	font-size: 1em;
-}
 
 /************ MEDIA QUERIES - LAPTOP **************/
 @media only screen and (min-width: 824px) and (max-width: 1060px) {
@@ -224,30 +238,30 @@ nav a:hover { color: #f94a32; }
 
 /************ MEDIA QUERIES - MOBILE **************/
 @media only screen and (max-device-width: 1143px) {
-	p { width: 100%; }
-	section, footer {width:50%;}
+  header, section, fotter { width: 72%; }
 
+  h3 { font-size: 21px; }
+  .to-top { right: 70px; }
 	.slick-prev { left: -40px; }
 	.slick-next {  right: -40px; }
 }
 
 @media only screen and (max-device-width: 890px) {
 	h1, .greeting {
-		font-size: 55px;
+		font-size: 46px;
 		line-height: 1em;
 	}
 
-	h2 { font-size: 40px; }
+	h2 { font-size: 38px; }
 
-  header, section, footer { width:70%;}
+  header, section, footer { width:75%;}
+  section { margin: 35px auto; }
+  article { width: 80%; }
 
-  .text {
-		font-size: 0.9em;
-		line-height: 1em;
-		padding: 0.5em 1em;
-		width: 70%;
-	}
-
+  .to-top { 
+    width: 51px;
+    right: 50px; 
+  }
 	.slick-prev {  left: -30px; }
 	.slick-next {  right: -30px; }
 }
@@ -260,7 +274,9 @@ nav a:hover { color: #f94a32; }
   	line-height: 1em;
   }
 
-  header, section,footer { width: 70%; }
+  header, section,footer { width: 75%; }
+  
+  article { width: 80%; }
 
   .text {
   	font-size: 0.9em;
@@ -275,11 +291,11 @@ nav a:hover { color: #f94a32; }
 	body { overflow-x: hidden;}
 
 	h1 {
-		font-size: 60px;
+		font-size: 38px;
 		line-height: 1em;
 	}
 
-	h2 {font-size: 50px; }
+	h2 {font-size: 45px; }
 
 	header { padding: 100px 0 20px 0; }
 
@@ -288,6 +304,8 @@ nav a:hover { color: #f94a32; }
 		margin: auto;
     font-size: 0.85em;
 	}
+
+  article { width: 80%; }
 
   nav { font-size: 0.85em; }
 
@@ -304,18 +322,18 @@ nav a:hover { color: #f94a32; }
 
   .greeting,
   .type-effect
-   { font-size: 40px; }
+   { font-size: 38px; }
 
   h1  {
-  	font-size: 35px;
+  	font-size: 32px;
   	line-height: 1em;
   }
 
   h2 { font-size: 30px; }
 
-  .text {
-  	font-size: 0.9em;
-  	line-height: 20px;
+  .description {
+  	font-size: 18em;
+  	line-height: 25px;
   	padding: 20px 10px; }
 
   nav { font-size: 0.85em; }
@@ -323,6 +341,11 @@ nav a:hover { color: #f94a32; }
   header, section, footer {
   	margin: auto;
   	width: 95%;
+  }
+
+  article { 
+    font-size: 16px;
+    width: 75%; 
   }
 
   .to-top {
