@@ -25,9 +25,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-h3 {
-	font-size: 24px;
-}
+h3 { font-size: 24px; }
 
 p {
   font-family: 'Strait', Tahoma, Helvetica;
@@ -36,9 +34,9 @@ p {
 }
 
 em {
-  font-weight: 600;
   background: #ff5139;
   color: #333;
+  font-weight: 600;
   padding: 2px;
 }
 
@@ -49,12 +47,14 @@ strong {
 }
 
 .curr-stack {
-  font-family: 'Strait', Tahoma, Helvetica;
   background:  #f94a32;
   color: #333;
+  font-family: 'Strait', Tahoma, Helvetica;
+  font-weight: bold;
+  padding: 2px;
 }
 
-.other-skills { 
+.underline { 
   border-bottom: 2px solid #f94a32;
   text-decoration: underline;
 }
@@ -64,10 +64,10 @@ hr {
   border-left:none;
   border-right: none;
   border-bottom: 1px dashed #fff;
+  clear:both;
   height: 2px;
   margin: 2em auto;
   padding: 2px;
-  clear:both;
 }
 
 /********** LAYOUT *********/
@@ -78,18 +78,19 @@ hr {
   color: #f94a32;
 }
 
-header, section, footer {
-	width: 55%;
-  margin: 20px auto;
-}
+header, section, footer { width: 55%; }
+
+section, footer { margin: 20px auto; }
 
 header {
-	padding-top: 150px;
+	padding-top: 145px;
+  margin: 20px auto 80px;
 }
 
 nav {
-	font-size: 1.2em;
 	color: #fff;
+	font-size: 20px;
+  margin-top: 15px;
 }
 
 article { 
@@ -160,7 +161,10 @@ footer { clear: both;
 }
 .top-of-page {margin:0;}
 
-.description { margin: 30px auto; }
+.description { 
+  line-height: 30px;
+  margin: 30px auto; 
+}
 
 .stack {
 	color: #ff5139;
@@ -183,7 +187,6 @@ a:link, a:visited {
   padding: 0px;
   font-family: Tahoma, Helvetica;
   text-decoration:none;
-  margin: 0 5px;
   font-variant: small-caps;
 }
 
@@ -194,7 +197,7 @@ a:hover {
 nav a:link,
 nav a:visited,
 nav a:active { 
-  color: #fff; 
+  color: #aaa; 
   font-weight: bold;
   margin: auto 10px;
 }
