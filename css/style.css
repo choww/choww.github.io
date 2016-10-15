@@ -310,8 +310,6 @@ nav a:hover { color: #f94a32; }
 
   article { width: 80%; }
 
-  nav { font-size: 0.85em; }
-
   .to-top { font-size: 0.85em; }
 
 	.slick-prev { left: -25px; }
@@ -325,24 +323,28 @@ nav a:hover { color: #f94a32; }
 
   .greeting,
   .type-effect
-   { font-size: 38px; }
+   { font-size: 35px; }
 
   h1  {
-  	font-size: 32px;
+  	font-size: 29px;
   	line-height: 1em;
   }
 
   h2 { font-size: 30px; }
+  h4 { font-size: 17px; }
+
+  nav { 
+    font-size: 16px; 
+    margin-top: 20px; 
+  }
 
   .description {
-  	font-size: 18px;
+  	font-size: 16px;
   	line-height: 25px;
-  	padding: 20px 10px; }
-
-  nav { font-size: 0.85em; }
+  	padding: 0 10px; }
 
   header, section, footer {
-  	margin: auto;
+  	margin: 30px auto;
   	width: 95%;
   }
 
@@ -357,6 +359,7 @@ nav a:hover { color: #f94a32; }
     font-size: 0.85em;
    }
 
-  .slick-prev { left: -25px; }
-  .slick-next { right: -25px; }
+  .slick-slide > img { max-width: 220px; }
+  .slick-prev { left: -5px; }
+  .slick-next { right: -5px; }
 }
