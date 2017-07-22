@@ -1,25 +1,41 @@
-body { font-family: Helvetica; }
+@import url('https://fonts.googleapis.com/css?family=Abel|Pattaya|Lekton:400');
+
+body { 
+  font-family: 'Abel'; 
+  font-size: 20px;
+}
 
 h1 { 
-  font-size: 45px; 
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-family: 'Pattaya';
+  font-size: 75px; 
+  margin-bottom: 20px;
 }
-h2 { 
-  font-size: 30px; 
+
+h2, h3 { 
+  font-family: 'Lekton'; 
   font-variant: small-caps;
   letter-spacing: 5px;
+}
+
+h2 { font-size: 35px; }
+
+h3 { 
+  font-size: 30px; 
   margin-bottom: 10px;
 }
-h3 { 
+
+h4 { 
+  color: #777;
   display: inline-block;
   font-size: 22px; 
+  font-weight: bold;
   margin-bottom: 5px;
 }
 
 header {
-  padding: 30px;
-  font-size: 18px;
+  padding: 50px;
+  font-size: 20px;
+  text-align: center;
 }
 
 aside, main { 
@@ -27,19 +43,20 @@ aside, main {
   vertical-align: top;
 }
 
-main h2 { 
-  border-bottom: 1px solid #ccc; 
+main h3 { 
+  color: #444;
+  border-bottom: 1px solid #ff5139;; 
   padding-bottom: 10px;
 }
 
 aside { 
-  border-right: 1px solid #ccc;
   padding-left: 30px;
   width: 27%;
 }
 
 main { 
-  width: 50%; 
+  border-left: 1px solid #ccc;
+  width: 67%; 
   padding-left: 20px;
 }
 
