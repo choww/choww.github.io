@@ -9,23 +9,153 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/resume.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Abel|Pattaya|Lekton:400');
+
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      tab10le, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+ 
+      body { 
+        font-family: 'Abel'; 
+        font-size: 15px;
+        line-height: 25px;
+      }
+
+      
+      h1 { 
+        font-family: 'Pattaya';
+        font-size: 70px; 
+        margin-bottom: 20px;
+      }
+      
+      h2, h3 { 
+        font-family: 'Lekton'; 
+        font-variant: small-caps;
+        letter-spacing: 5px;
+      }
+      
+      h2 { font-size: 32px; }
+      
+      h3 { 
+        font-size: 28px; 
+      }
+      
+      h4 { 
+        color: #777;
+        display: inline-block;
+        font-size: 20px; 
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      h5 { 
+        font-weight: bold;
+      }
+      
+      header {
+        line-height: 30px;
+        padding: 40px 0 20px;
+        text-align: center;
+      }
+      
+      aside, main { 
+        display: inline-block; 
+        vertical-align: top;
+      }
+      
+      main h3 { 
+        color: #444;
+        border-bottom: 1px solid #ff5139;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+      }
+      aside {
+        background: #ddd;
+        padding: 10px 10px 10px 25px;
+        height: 1111px;
+        width: 25%;
+      }
+
+      aside > div { 
+        margin: 7px auto 10px;
+      }
+      
+      main {
+        border-left: 1px solid #444;
+        margin-left: -4px;
+        padding: 10px 20px 0;
+        width: 68.5%;
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      
+      section div { margin-bottom: 10px; }
+      
+      section span {
+        float: right;
+      }
+
+      ul { 
+        list-style-type: none;
+        list-style-position: inside;
+        margin-left: 7px;
+        margin-bottom: 10px;
+      }
+      
+      li::before {
+        content: '▪ ';
+        color: #ccc;
+      }
+    </style>
 	</head>
 	<body>
     <header>
       <h1>Carmen Chow</h1>
       <h2>Full Stack Web Developer</h2>
-      <i class="fa fa-github"></i> choww <i class="fa fa-phone"></i> (604) 613-2811 <i class="fa fa-envelope"></i> carmenn.choww@gmail.com
+
+      <p>
+        I am a scientist turned full stack developer currently working with Ruby on Rails and Javascript/jQuery, but have explored other technologies such as Django, Angular.js, and React.js via side projects and hackathons. Learning excites me and I am seeking opportunities where I will be challenged and be able to grow as a developer. 
+      </p>
     </header>
     <aside> 
-      <h3>Languages</h3>
-      Ruby, Javascript/jQuery, Python, HTML, CSS/SASS
-      <h3>Frameworks</h3>
-      Rails, Django, Angular.js, React.js, D3.js, Bootstrap
-      <h3>Tools</h3>
-      Git, Gulp.js, Webpack, PostgreSQL, Redis
-
-      <h3>About Me</h3>
-        
+      <h3>Contact Me</h3>
+      <div>
+        <i class="fa fa-github"></i> choww <br/>
+        <i class="fa fa-phone"></i> (604) 613-2811 <br/>
+        <i class="fa fa-envelope"></i> carmenn.choww@gmail.com
+      </div>
+      <h3>Skills</h3>
+      <div>
+        <h5>Languages/Frameworks</h5>
+        Ruby, Javascript/jQuery, Python, HTML, CSS/SASS<br/>
+        Rails, Django, Flask, Angular.js, React.js, D3.js, Bootstrap<br/>
+        <h5>Database</h5>
+        PostgreSQL, Redis<br/>    
+        <h5>Tools/Other</h5>
+        Gulp.js, Webpack, Git, Linux (Fedora, Ubuntu, and CentOS)
+      </div>
+      <h3>When I'm Not Coding...</h3>
+      <div>
+        I enjoy hiking, skiing, playing Overwatch, playing the guitar (terribly), and going to tech/science meetups!
+      </div>
     </aside>
     <main>  
       <section>
@@ -36,13 +166,27 @@
           <span>November 2016 - present</span>
           <h5>Fresh Prep</h5>
           <strong>Stack</strong>: Ruby on Rails, jQuery, PostgreSQL, Redis
+
+          <ul>
+            <li>Help newer developers with environment set-up and debugging.</li>
+            <li>Built Fresh Prep's workflow management system and most of their client-facing web application.</li>
+            <li>Set up staging environments on cloud platforms such as Amazon Web Services and Google Cloud Platform</li>
+            <li>Work with everyone from management to customer service staff to develope features that would increase productivity.</li>
+          </ul>
         </div>
 
-        <div>
-          <h4>Developer (part-time)</h4>
+        
+          <h4>Front-end Developer (part-time contract)</h4>
           <span>May 2017 - present</span>
-          <h5>NCIX PC </h5>
-          <strong>Stack</strong>: jQuery, Gulp.js
+          <h5>NCIX PC</h5>
+          <strong>Stack</strong>: jQuery, Gulp.js, CSS/SASS
+          
+          <ul>
+            <li>Rebuild the NCIX PC website layout from scratch.</li>
+            <li>Work with the designer and project manager to develop specifications for the website.</li>
+            <li>Work with the development team at NCIX to coordinate integration of their internal system with the front-end of the site.</li>
+            <li>Introduced new tools such as Gulp.js and Browserify into the workflow</li>
+          </ul>
         </div>
 
         <div> 
@@ -50,16 +194,36 @@
           <span>April 2016 - October 2016</span>
           <h5>Globalsys Web Solutions</h5>
           <strong>Stack</strong>: Ruby on Rails, jQuery, PostgreSQL, Redis
+          <ul>
+            <li>Build customer web applications for clients</li>
+            <li>Work with clients to develope specifications for their project</li>
+            <li>Provide technical support for clients once the application is complete</li>
+          </ul>
         </div>
       </section>
 
       <section>
-        <h3><i class="fa fa-group"></i> Volunteering</h3>
+        <h3><i class="fa fa-group"></i> Other Experience</h3>
         <div>
-          <h5>Mentor</h5>
+          <h4>Mentor</h4>
           <span>2016 - present</span>
-          <h4>Ladies Learning Code</h4>
-          Workshops I worked at: Python, Ruby, Javascript, HTML/CSS      
+          <h5>Ladies Learning Code</h5>
+          <ul>
+            <li>Workshops mentored: Python, Ruby, Javascript, HTML/CSS</li>
+            <li>Explain course material to students</li>
+            <li>Guide students through assignments via either pair programming or providing hints depending on their skill level</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Developer</h4>
+          <span>Jan 2016</span>
+          <h5>Fraser Health Hackathon</h5>
+          <p>Stack: Flask, CSS/SASS, jQuery</p>
+          <ul>
+            <li>Winner of the Telus Prize</li>
+            <li>Worked with front-end developer to build an app to alert first-responders of an overdose</li>
+          </ul> 
         </div>
       </section>
 

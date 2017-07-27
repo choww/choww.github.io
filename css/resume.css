@@ -69,3 +69,14 @@ section div { margin-bottom: 10px; }
 section span {
   float: right; 
 }
+
+ul { 
+  list-style-position: inside; 
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+li::before {
+  content: '▪ ';
+  color: #ccc;
+}
