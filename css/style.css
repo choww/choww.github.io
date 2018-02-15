@@ -220,7 +220,6 @@ nav a:hover { color: #f94a32; }
 
   header, section, footer { width:75%;}
   section { margin: 35px auto; }
-  /* article { width: 80%; } */
 
   .to-top { 
     width: 51px;
@@ -237,8 +236,6 @@ nav a:hover { color: #f94a32; }
   }
 
   header, section,footer { width: 75%; }
-  
-  /* article { width: 80%; } */
 
   .text {
   	font-size: 0.9em;
@@ -263,8 +260,6 @@ nav a:hover { color: #f94a32; }
 		margin: auto;
     font-size: 0.85em;
 	}
-
-  /* article { width: 80%; } */
 
   .to-top { font-size: 0.85em; }
 }
@@ -294,10 +289,6 @@ nav a:hover { color: #f94a32; }
   header, section, footer {
   	margin: 30px auto;
   	width: 95%;
-  }
-
-  article { 
-    /* width: 75%; */
   }
 
   .to-top {
