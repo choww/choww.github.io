@@ -8,12 +8,11 @@
 
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/slick.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<a class="top-of-page"></a>
 		<header>
+		  <a class="top-of-page"></a>
 			<h1>
 				<span class="greeting">Hello!</span> I'm Carmen and I love writing
 				<div class="type-effect">
@@ -23,62 +22,66 @@
 			</h1>
 
 			<nav>
-				<a href="https://github.com/choww" target="_blank"><i class="fa fa-github"></i> github</a> 
-				<a href="https://twitter.com/chowcar" target="_blank"><i class="fa fa-twitter"></i> twitter</a> 
-				<a href="https://instagram.com/chowwwmein" target="_blank"><i class="fa fa-instagram"></i> instagram</a> 
-				<a href="https://ca.linkedin.com/in/carmenchoww" target="_blank"><i class="fa fa-linkedin"></i> linkedin</a> 
+				<a href="https://github.com/choww" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> github</a> 
+				<a href="https://twitter.com/chowcar" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i> twitter</a> 
+				<a href="https://instagram.com/chowwwmein" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i> instagram</a> 
+				<a href="https://ca.linkedin.com/in/carmenchoww" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i> linkedin</a> 
 				<a href="#contact" id="contact-link"><i class="fa fa-pencil-square-o"></i> contact</a>
 			</nav>
 
-			<div class="description">
-				Full-stack developer from Vancouver, BC. Enthusiatic about clean, readable code and exploring new technologies! My current stack is <span class="curr-stack">Ruby on Rails</span>, <span class="curr-stack">Javascript/jQuery</span> and <span class="curr-stack">PostgreSQL</span>, but I also have experience with <span class="underline">Angular.js</span>, <span class="underline">React.js</span>, <span class="underline">Python</span>, <span class="underline">Django</span>, and <span class="underline">Redis</span>.
+			<div>
+				Full-stack developer from Vancouver, BC. Enthusiatic about clean, readable code and exploring new technologies! My current stack is <span class="curr-stack">Ruby on Rails</span>, <span class="curr-stack">Vue.js</span>, <span class="curr-stack">Javascript/jQuery</span> and <span class="curr-stack">PostgreSQL</span>, but I also have experience with <span class="underline">Angular.js</span>, <span class="underline">React.js</span>, <span class="underline">Python</span>, <span class="underline">Django</span>, and <span class="underline">Redis</span>.
 			</div>
 		</header>
 
-		<section>
+		<section >
 			<h2>Projects</h2>
       <h4>Things I build in my spare time! More on my <a href="https://github.com/choww" target="_blank">github</a></h4>
 			<hr>
-      <article>
-        <h3><a href="https://github.com/choww/dev-notebook" target="_blank">DevBook</a></h3>
-        <p><span class="status complete">version 1</span> - <a href="https://devbase.herokuapp.com" target="_blank" rel="noopener noreferrer">live</a></p>
-        <p>
-          After a journal deletion scare on another blog hosting provider, I decided to create my own blog platform! This was a way for me to explore more of Django's features and dive deeper into Vue.js. All blog posts are format-able via HTML currently, but I would like to introduce either formatting through Markdown or implement a WYSIWYG editor. 
-        </p>
-        <div class="stack">Django, Vue.js, Bulma, PostgreSQL</div>
-      </article>
+      <div class="columns">
+        <article class="column is-6">
+          <h3><a href="https://github.com/choww/dev-notebook" target="_blank">DevBook</a></h3>
+          <p><span class="status complete">version 1</span> - <a href="https://devbase.herokuapp.com" target="_blank" rel="noopener noreferrer">live</a></p>
+          <p>
+            After a journal deletion scare on another blog hosting provider, I decided to create my own blog platform! This was a way for me to explore more of Django's features and dive deeper into Vue.js. All blog posts are format-able via HTML currently, but I would like to introduce either formatting through Markdown or implement a WYSIWYG editor. 
+          </p>
+          <div class="stack">Django, Vue.js, Bulma, PostgreSQL</div>
+        </article>
 
-      <article>
-        <h3><a href="https://github.com/choww/coffee-run" target="_blank">Coffee Run</a></h3>
-        <p><span class="status incomplete">in progress</span></p>
-        <p>
-          I love coffee shops and would like a way to keep track of places I've been and store additional info such as which locations have the best wifi and the most amount of electrical outlets! This app was a natural response to that interest and it was also a great excuse to finally learn how to use Webpack!
-        </p>
-        <div class="stack">Django, React.js, Bulma, PostgreSQL</div>
-      </article>
+        <article class="column is-6">
+          <h3><a href="https://github.com/choww/coffee-run" target="_blank">Coffee Run</a></h3>
+          <p><span class="status incomplete">in progress</span></p>
+          <p>
+            I love coffee shops and would like a way to keep track of places I've been and store additional info such as which locations have the best wifi and the most amount of electrical outlets! This app was a natural response to that interest and it was also a great excuse to finally learn how to use <strong>Webpack</strong>!
+          </p>
+          <div class="stack">Django, React.js, Bulma, PostgreSQL</div>
+        </article>
+      </div>
 
-      <article>
-	  		<h3><a href="https://github.com/choww/hi-mars">Hi Mars</a></h3>
-        <p>
-          <span class="status complete">version 1</span> - <a href="http://choww.github.io/hi-mars" target="_blank">live</a>
-        </p>
-        <p>
-	  		  I wanted to learn <strong>Angular</strong> and I'm fascinated by <strong>astronomy</strong>, so I combined the two interests into a <span class="underline">Mars weather report</span> app!<br>
-          Data were obtained from the <a href="http://marsweather.ingenology.com" target="_blank">{MAAS}</a> API and displayed using Angular.js. The line chart that display temperature changes over time was built using D3.js.
-        </p>
+      <div class="columns">
+        <article class="column is-6">
+	  	  	<h3><a href="https://github.com/choww/hi-mars">Hi Mars</a></h3>
+          <p>
+            <span class="status complete">version 1</span> - <a href="http://choww.github.io/hi-mars" target="_blank">live</a>
+          </p>
+          <p>
+	  	  	  I wanted to learn <strong>Angular</strong> and I'm fascinated by <strong>astronomy</strong>, so I combined the two interests into a <span class="underline">Mars weather report</span> app!<br>
+            Data were obtained from the <a href="http://marsweather.ingenology.com" target="_blank">{MAAS}</a> API and displayed using Angular.js. The line chart that display temperature changes over time was built using D3.js.
+          </p>
 
-	  	  <div class="stack">Angular.js, D3.js, CSS/SASS</div>
-      </article>
+	  	    <div class="stack">Angular.js, D3.js, CSS/SASS</div>
+        </article>
 
-      <article>
-	  		<h3><a href="https://github.com/choww/hpc-areas" target="_blank">HPC Calculator</a></h3>
-        <p><span class="status complete">version 1</span></p>
-	  		<p>
-          In my previous life as a <strong>scientist</strong>, I spent a lot of time prepping data for analysis, which is tedious. I decided to automate a part of this process with a desktop application that <span class="underline">calculates hippocampal volume & cell density</span>.<br/>
-          Reading and writing to Excel was faciliated with the xlutils module, and the GUI was built using wxPython. 
-        </p>
-	  		<div class="stack">Python</div>
-      </article>
+        <article class="column is-6">
+	  	  	<h3><a href="https://github.com/choww/hpc-areas" target="_blank">HPC Calculator</a></h3>
+          <p><span class="status complete">version 1</span></p>
+	  	  	<p>
+            In my previous life as a <strong>scientist</strong>, I spent a lot of time prepping data for analysis, which is tedious. I decided to automate a part of this process with a desktop application that <span class="underline">calculates hippocampal volume & cell density</span>.<br/>
+            Reading and writing to Excel was faciliated with the xlutils module, and the GUI was built using wxPython. 
+          </p>
+	  	  	<div class="stack">Python</div>
+        </article>
+      </div>
 		</section>
 
 		<footer>
@@ -90,13 +93,17 @@
 			<p>
 				<i class="fa fa-envelope"></i> Email: <a href="mailto: carmenn.choww@gmail.com">carmenn.choww@gmail.com</a>
 			</p>
-
+      <div class="columns">
+			  <div class="column is-1 is-offset-one-third-desktop"><a href="https://github.com/choww" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></div>
+			  <div class="column is-1"><a href="https://twitter.com/chowcar" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></div>
+			  <div class="column is-1"><a href="https://instagram.com/chowwwmein" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></div> 
+			  <div class="column is-1"><a href="https://ca.linkedin.com/in/carmenchoww" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></div>
+      </div>
 		</footer>
 
 		<div class="to-top"><a href="#top-of-page"><i class="fa fa-arrow-circle-up"></i> Top</a></div>
 
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/script.js"></script>
-
 	</body>
 </html>

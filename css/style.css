@@ -1,15 +1,16 @@
+@import '../node_modules/bulma/css/bulma.css';
 @import url(http://fonts.googleapis.com/css?family=Strait);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 /********** BASE **********/
+html, body { margin: 0; }
 body {
   text-align: center;
-  font-size: 1.05em;
+  font-size: 1.2rem;
   color: #fff;
   min-height: 100%;
-  margin: 0;
   font-family: 'Strait', Tahoma, Helvetica;
-  line-height: 25px;
+  line-height: 30px;
   background:#333;
 }
 
@@ -41,9 +42,7 @@ em {
 }
 
 strong {
-  font-family: Tahoma, Helvetica;
-  font-size: 14px;
-  font-weight: 600;
+  color: #fff;
 }
 
 .curr-stack {
@@ -80,34 +79,29 @@ hr {
 
 header, section, footer { width: 55%; }
 
-section, footer { margin: 20px auto; }
+section, footer { margin: 20px auto auto; }
 
 header {
-	padding-top: 145px;
-  margin: 20px auto 80px;
+	padding-top: 8rem;
+  margin: auto auto 3rem;
 }
 
 nav {
 	color: #fff;
-	font-size: 20px;
+	font-size: 1.25rem;
   margin-top: 15px;
 }
 
+
 article { 
   color: #f9f2f2;
-  display: inline-block;
   font-family: 'Strait', Arial;
-  font-size: 17px;
   line-height: 20px;
-  margin: auto;
-  padding: 10px;
-  text-align: justify;
-  vertical-align: top;
-  width: 46%; 
+  text-align: left;
 }
 
-footer { clear: both;
-  margin-top: 1%;
+footer { 
+  margin-top: 3%;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -140,14 +134,8 @@ footer { clear: both;
 	padding-bottom: 25px;
 	margin: 0;
 	display: none;
-	font-size: 16px;
 }
 .top-of-page {margin:0;}
-
-.description { 
-  line-height: 30px;
-  margin: 30px auto; 
-}
 
 .stack {
 	color: #ff5139;
@@ -232,7 +220,7 @@ nav a:hover { color: #f94a32; }
 
   header, section, footer { width:75%;}
   section { margin: 35px auto; }
-  article { width: 80%; }
+  /* article { width: 80%; } */
 
   .to-top { 
     width: 51px;
@@ -250,7 +238,7 @@ nav a:hover { color: #f94a32; }
 
   header, section,footer { width: 75%; }
   
-  article { width: 80%; }
+  /* article { width: 80%; } */
 
   .text {
   	font-size: 0.9em;
@@ -276,7 +264,7 @@ nav a:hover { color: #f94a32; }
     font-size: 0.85em;
 	}
 
-  article { width: 80%; }
+  /* article { width: 80%; } */
 
   .to-top { font-size: 0.85em; }
 }
@@ -303,19 +291,13 @@ nav a:hover { color: #f94a32; }
     margin-top: 20px; 
   }
 
-  .description {
-  	font-size: 16px;
-  	line-height: 25px;
-  	padding: 0 10px; }
-
   header, section, footer {
   	margin: 30px auto;
   	width: 95%;
   }
 
   article { 
-    font-size: 16px;
-    width: 75%; 
+    /* width: 75%; */
   }
 
   .to-top {

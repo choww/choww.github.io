@@ -18,12 +18,6 @@ jQuery(function($) {
 		$(this).next("span").show(300, showNext);
 	});
 
-	/****** SLIDER *******/
-	$('.img-slider').slick({
-		fade: true,
-		infinite: true
-	});
-
 	/***** STICKY TOP BUTTON ****/
 
 	$(window).scroll(function() {

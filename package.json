@@ -1,0 +1,32 @@
+{
+  "name": "choww.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^2.29.0",
+    "react-dom": "^15.6.1",
+    "react": "^15.6.1",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "devDependencies": {
+    "bulma": "^0.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choww/choww.github.io.git"
+  },
+  "author": "carmen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/choww/choww.github.io/issues"
+  },
+  "homepage": "https://github.com/choww/choww.github.io#readme"
+}
