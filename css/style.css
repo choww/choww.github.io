@@ -112,23 +112,6 @@ footer { clear: both;
   padding-bottom: 50px;
 }
 
-/********** MODULE - SLIDERS ***********/
-.img-slider img {
-	width: 275px;
-	margin: auto;
-}
-.img-slider {
-  width: 300px !important;
-	margin: auto;
-}
-
-.slick-prev, .slick-next {
-	font-family: 'Pacifico', Impact, cursive;
-	color:#f94a32;
-}
-.slick-prev { 	left: -30px; }
-.slick-next { right: -30px; }
-
 /********** MODULE - TYPE EFFECT *******/
 .type-effect {
 	font-family: Courier;
@@ -205,15 +188,9 @@ nav a:active {
 nav a:hover { color: #f94a32; }
 
 /************ MEDIA QUERIES - LAPTOP **************/
-@media only screen and (min-width: 824px) and (max-width: 1060px) {
-	.slick-prev { left: -10px; }
-	.slick-next { right: -10px; }
-}
 @media only screen and (min-width: 628px) and (max-width: 823px) {
 	section, footer { width: 60%; }
 	.to-top {right: 50px;}
-	.slick-prev { left: -10px; }
-	.slick-next { right: -10px; }
 }
 
 @media only screen and (min-width: 463px) and (max-width: 627px) {
@@ -235,8 +212,6 @@ nav a:hover { color: #f94a32; }
 	}
 
 	.to-top { right: 0; }
-	.slick-prev { left: -15px; }
-	.slick-next { right: -15px; }
 }
 
 /************ MEDIA QUERIES - MOBILE **************/
@@ -245,8 +220,6 @@ nav a:hover { color: #f94a32; }
 
   h3 { font-size: 21px; }
   .to-top { right: 70px; }
-	.slick-prev { left: -40px; }
-	.slick-next {  right: -40px; }
 }
 
 @media only screen and (max-device-width: 890px) {
@@ -265,8 +238,6 @@ nav a:hover { color: #f94a32; }
     width: 51px;
     right: 50px; 
   }
-	.slick-prev {  left: -30px; }
-	.slick-next {  right: -30px; }
 }
 
 @media only screen and (max-device-width: 598px)  {
@@ -285,9 +256,6 @@ nav a:hover { color: #f94a32; }
   	font-size: 0.9em;
   	line-height: 1em;
   	width: 100%; }
-  .slick-prev { left: -25px; }
-  .slick-next { right: -25px; }
-
 }
 
 @media only screen and  (max-device-width: 451px) {
@@ -311,9 +279,6 @@ nav a:hover { color: #f94a32; }
   article { width: 80%; }
 
   .to-top { font-size: 0.85em; }
-
-	.slick-prev { left: -25px; }
-	.slick-next { right: -25px; }
 }
 
 @media only screen and (max-device-width: 360px) {
@@ -358,8 +323,4 @@ nav a:hover { color: #f94a32; }
     width: 80px;
     font-size: 0.85em;
    }
-
-  .slick-slide > img { max-width: 220px; }
-  .slick-prev { left: -5px; }
-  .slick-next { right: -5px; }
 }
