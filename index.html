@@ -1,109 +1,132 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Web developer portfolio">
-		<meta name="Carmen Chow">
-    <meta name="viewport" content="width=device-width">
-
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Carmen Chow | Web Developer</title>
+		<meta charset="utf-8" />
+    <meta name="description" content="Full-stack web developer portfolio">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
-		<header>
-		  <a class="top-of-page"></a>
-			<h1>
-				<span class="greeting">Hello!</span> I'm Carmen and I love writing
-				<div class="type-effect">
-					<span class="backup-type">code</span>
-				</div> 
-				<span class="type-cursor"></span>
-			</h1>
 
-			<nav>
-				<a href="https://github.com/choww" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> github</a> 
-				<a href="https://twitter.com/chowcar" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i> twitter</a> 
-				<a href="https://instagram.com/chowwwmein" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i> instagram</a> 
-				<a href="https://ca.linkedin.com/in/carmenchoww" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i> linkedin</a> 
-				<a href="#contact" id="contact-link"><i class="fa fa-pencil-square-o"></i> contact</a>
-			</nav>
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Carmen Chow</a></h1>
+					<p>Web developer, former scientist, <br/>
+             huge fan of ramen.</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#two">Projects</a></li>
+						<li><a href="#three">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://github.com/choww" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/chowwmein_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://instagram.com/chowwwmein" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://ca.linkedin.com/in/carmenchoww" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="mailto:carmenchow@protonmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
 
-			<div>
-				Full-stack developer from Vancouver, BC. Enthusiatic about clean, readable code and exploring new technologies! My current stack is <span class="curr-stack">Ruby on Rails</span>, <span class="curr-stack">Vue.js</span>, <span class="curr-stack">Javascript/jQuery</span> and <span class="curr-stack">PostgreSQL</span>, but I also have experience with <span class="underline">Angular.js</span>, <span class="underline">React.js</span>, <span class="underline">Python</span>, <span class="underline">Django</span>, and <span class="underline">Redis</span>.
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Hello</h2>
+                    <p>I love to code and I do it for a living!</p>
+									</header>
+                  <p>
+                    Currently working with Ruby on Rails, Vue.js, and jQuery, and having fun with Go, React.js, Django, and GraphQL! 
+                  </p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Projects</h3>
+                  <p>Things I build in my spare time! More on my <a href="https://github.com/choww" target="_blank">github</a></p>
+									<div class="features">
+										<article>
+											<a href="https://devbase.herokuapp.com" class="image"><img src="images/devbook.png" alt="DevBook" /></a>
+											<div class="inner">
+												<h4>DevBook</h4>
+                        <p>After a journal deletion scare on another blogging platform, I decided to create my own! All blog posts are format-able via HTML currently, but I would like to introduce either formatting through Markdown or implement a WYSIWYG editor.</p>
+                        <h5>Django, Vue.js, Bulma, PostgreSQL</h5>
+											</div>
+										</article>
+										<article>
+											<a href="https://github.com/choww/coffee-run" class="image"><img src="images/code.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Coffee Run</h4>
+                        <p>I love coffee shops and wanted a way to keep track of places I've been! It was also a great excuse to finally learn how to use Webpack!</p>
+                        <h5>Django, React.js, Bulma, PostgreSQL</h5>
+											</div>
+										</article>
+										<article>
+											<a href="https://github.com/choww/hpc-areas" class="image"><img src="images/code.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>HPC Calculator</h4>
+                        <p>At my old job I spent a lot of time prepping data for analysis. I decided to automate some of this process with a desktop application that calculates hippocampal volume & cell density.</p>
+                        <h5>Python</h5>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Contact Me</h3>
+                  <p>
+                    For side projects or just for a chat! <br/>
+                    (Or if you need a healer for your Overwatch team :D)
+                  </p>
+                  <p><i class="fa fa-envelope"></i> Email: <a href="mailto:carmenchow@protonmail.com">carmenchow@protonmail.com</a>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Carmen Chow. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
 			</div>
-		</header>
 
-		<section >
-			<h2>Projects</h2>
-      <h4>Things I build in my spare time! More on my <a href="https://github.com/choww" target="_blank">github</a></h4>
-			<hr>
-      <div class="columns">
-        <article class="column is-6">
-          <h3><a href="https://github.com/choww/dev-notebook" target="_blank">DevBook</a></h3>
-          <p><span class="status complete">version 1</span> - <a href="https://devbase.herokuapp.com" target="_blank" rel="noopener noreferrer">live</a></p>
-          <p>
-            After a journal deletion scare on another blog hosting provider, I decided to create my own blog platform! This was a way for me to explore more of Django's features and dive deeper into Vue.js. All blog posts are format-able via HTML currently, but I would like to introduce either formatting through Markdown or implement a WYSIWYG editor. 
-          </p>
-          <div class="stack">Django, Vue.js, Bulma, PostgreSQL</div>
-        </article>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-        <article class="column is-6">
-          <h3><a href="https://github.com/choww/coffee-run" target="_blank">Coffee Run</a></h3>
-          <p><span class="status incomplete">in progress</span></p>
-          <p>
-            I love coffee shops and would like a way to keep track of places I've been and store additional info such as which locations have the best wifi and the most amount of electrical outlets! This app was a natural response to that interest and it was also a great excuse to finally learn how to use <strong>Webpack</strong>!
-          </p>
-          <div class="stack">Django, React.js, Bulma, PostgreSQL</div>
-        </article>
-      </div>
-
-      <div class="columns">
-        <article class="column is-6">
-	  	  	<h3><a href="https://github.com/choww/hi-mars">Hi Mars</a></h3>
-          <p>
-            <span class="status complete">version 1</span> - <a href="http://choww.github.io/hi-mars" target="_blank">live</a>
-          </p>
-          <p>
-	  	  	  I wanted to learn <strong>Angular</strong> and I'm fascinated by <strong>astronomy</strong>, so I combined the two interests into a <span class="underline">Mars weather report</span> app!<br>
-            Data were obtained from the <a href="http://marsweather.ingenology.com" target="_blank">{MAAS}</a> API and displayed using Angular.js. The line chart that display temperature changes over time was built using D3.js.
-          </p>
-
-	  	    <div class="stack">Angular.js, D3.js, CSS/SASS</div>
-        </article>
-
-        <article class="column is-6">
-	  	  	<h3><a href="https://github.com/choww/hpc-areas" target="_blank">HPC Calculator</a></h3>
-          <p><span class="status complete">version 1</span></p>
-	  	  	<p>
-            In my previous life as a <strong>scientist</strong>, I spent a lot of time prepping data for analysis, which is tedious. I decided to automate a part of this process with a desktop application that <span class="underline">calculates hippocampal volume & cell density</span>.<br/>
-            Reading and writing to Excel was faciliated with the xlutils module, and the GUI was built using wxPython. 
-          </p>
-	  	  	<div class="stack">Python</div>
-        </article>
-      </div>
-		</section>
-
-		<footer>
-			<a name="contact"></a>
-			
-			<h2>Contact Me</h2>
-      <h4>For side projects or just for a chat!</h4>
-			<hr>
-			<p>
-				<i class="fa fa-envelope"></i> Email: <a href="mailto: carmenn.choww@gmail.com">carmenn.choww@gmail.com</a>
-			</p>
-      <div class="columns">
-			  <div class="column is-1 is-offset-one-third-desktop"><a href="https://github.com/choww" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></div>
-			  <div class="column is-1"><a href="https://twitter.com/chowcar" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></div>
-			  <div class="column is-1"><a href="https://instagram.com/chowwwmein" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></div> 
-			  <div class="column is-1"><a href="https://ca.linkedin.com/in/carmenchoww" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></div>
-      </div>
-		</footer>
-
-		<div class="to-top"><a href="#top-of-page"><i class="fa fa-arrow-circle-up"></i> Top</a></div>
-
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/script.js"></script>
 	</body>
 </html>
