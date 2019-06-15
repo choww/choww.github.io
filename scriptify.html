@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scriptify Authentication</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Scriptify Authentication</h1>
+      
+      <p>Thank you! Please copy and paste the following into the Scriptify CLI:</p>
+
+      <div class="input-field">
+        <textarea id="textarea" class="materialize-textarea"></textarea>
+      </div>
+    </div>
+
+    <script>
+      const url = new URL(location.href);
+      const authCode = url.searchParams.get('code');
+      document.querySelector('textarea').value = authCode;
+    </script>
+  </body>
+</html>
