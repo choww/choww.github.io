@@ -1,2 +1,8 @@
 node_modules
 *.log
+particle
+_site
+.sass-cache
+node_modules
+_drafts
+.jekyll-cache
