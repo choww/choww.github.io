@@ -5,12 +5,14 @@
             <img alt="My photo" src="{{site.profile_picture}}">
         </div>
 
-        <h1>
-            <span class="site-title">[{{site.username}}]</span>
-        </h1>
+          <h1>
+            <a href="/about" title="about me" class="site-title">
+              [{{site.username}}]
+            </a>
+          </h1>
 
         <div class="icons-home">
-            <a aria-label="Send email" title="Send me a e-mail" href="mailto:{{site.email}}">
+            <a aria-label="Send email" title="my email" href="mailto:{{site.email}}">
                 <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
             </a>
 
@@ -32,17 +34,20 @@
         </div>
 
         <ul class="recent">
-            <p>Recent posts:</p>
-             {% for post in site.posts limit:3%}
+          <h2>Recent posts:</h2>
+             {% for post in site.posts limit:5%}
                 <li>
-                    <a title="Will take a my recent post" href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title" itemprop="name">{{ post.title }}</h2>
+
+                  <a title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">
+                        <h3 class="post-title" itemprop="name">
+                          {{ post.title }}
+                        </h3>
                     </a>
                 </li>
               {% endfor %}
         </ul>
 
-        <ul class="recent">
+        <!--<ul class="recent">
             <p>Recent projects:</p>
              {% for project in site.projects limit:3%}
                 <li>
@@ -51,7 +56,7 @@
                     </a>
                 </li>
               {% endfor %}
-        </ul>
+        </ul> -->
 
     </div>
     {% include menu-search.html %}

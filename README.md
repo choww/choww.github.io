@@ -1,6 +1,6 @@
 # choww.github.io
 
-Created using the [space jekyll theme](https://github.com/victorvoid/space-jekyll-template)
+Created using a modified version of the [space jekyll theme](https://github.com/victorvoid/space-jekyll-template)
 
 ```sh
 bundle install

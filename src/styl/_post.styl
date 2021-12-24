@@ -1,27 +1,46 @@
 .post
-    +above(rem(1450px))
-        margin-left: 347px
-    h1, h2, h3
-        &:before
-            color main
-            font-weight 300
-            margin-right 10px
-    h1
-        text-align center
-        margin 0
-        font-size rem(30px)
-        +above(cut)
-            font-size rem(40px)
-        &:before
-            content "#"
-            color main
-            font-size rem(40px)
-    .time
-        text-align center
-        margin-top 30px
-        mainFont(300)
-    .music-read
-        text-align center
+  +above(rem(1450px))
+    margin-left: 347px
+  strong
+    font-weight 600
+  h1, h2, h3
+    color texts
+    &:before
+      color accent2
+      font-weight 300
+      margin-right 10px
+  h1
+    text-align center
+    margin 0
+    font-size rem(30px)
+    +above(cut)
+      font-size rem(40px)
+    &:before
+      content "#"
+      color accent2
+      font-size rem(40px)
+  .time
+    text-align center
+    margin-top 30px
+    mainFont(300)
+  .music-read
+    text-align center
+  .to-top
+    text-align center
+    mainFont(400)
+    &:before 
+      content "↑"
+      color accent2
+      text-decoration none
+      margin-right 1px
+      font-size rem(19px)
+    a 
+      color links
+  .tags
+    text-align center
+    a 
+      color accent
+      border-bottom 2px solid accent
 .post-content
     padding rem(16px) 0
     img
@@ -44,7 +63,7 @@
             color colorcode
     a
         mainFont(300)
-        color main
+        color links 
         text-decoration none
         border-bottom 2px solid main
         &:hover
@@ -96,7 +115,7 @@
                 padding 0
     hr
     	center(rem(760px))
-    	border 1px solid lightGray
+    	border 1px solid texts
     	margin 50px auto
     .about_perfil
         width 200px
@@ -127,6 +146,7 @@ table
     font-size rem(36px)
     margin-top rem(60px)
     center(rem(800px))
+    color accent
     +below(cut)
         font-size rem(28px)
         margin-top rem(20px)
@@ -139,10 +159,11 @@ table
         padding 0 rem(20px)
     a
         display block
-        border-bottom 1px solid darken(lightGray,10%)
+        border-bottom 1px solid texts
         padding rem(10px) 0
         text-decoration none
         transition all .5s
+        color links
         &:hover
             color hover
             border-bottom 1px solid hover

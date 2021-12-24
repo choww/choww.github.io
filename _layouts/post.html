@@ -13,12 +13,20 @@
             {% endif %}
             <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
 
+            <div class="tags">
+              {% for tag in page.tags %}
+                <a data-scroll href="#{{ tag | slugify }}">{{ tag }}</a>
+              {% endfor %}
+            </div>
+
             <article role="article" id="scroll" class="post-content" itemprop="articleBody">
-                {{ content }}
+              {{ content }}
             </article>
 
-            {% include share.html %}
-            {% include comments.html %}
+            <p class="to-top"><a href="#top">Back to top</a></p>
+
+            <!-- {% include share.html %} --> 
+            <!-- {% include comments.html %} -->
             {% include footer.html %}
             {% include scripts.html %}
         </section>
