@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    {% include head.html %}
+    <body>
+        {% include svg-icons.html %}
+        {% include header-post.html %}
+        {% include tree-posts.html %}
+        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+            {% if page.date %}
+                <div class="time">
+                    <time itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+                </div>
+            {% endif %}
+            <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+
+            <div class="tags">
+              {% for tag in page.tags %}
+                <a data-scroll href="#{{ tag | slugify }}">{{ tag }}</a>
+              {% endfor %}
+            </div>
+
+            <article role="article" id="scroll" class="post-content" itemprop="articleBody">
+              {{ content }}
+            </article>
+
+            <p class="to-top"><a href="#top">Back to top</a></p>
+
+            <!-- {% include share.html %} --> 
+            <!-- {% include comments.html %} -->
+            {% include footer.html %}
+            {% include scripts.html %}
+        </section>
+    </body>
+</html>
