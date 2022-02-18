@@ -12,7 +12,7 @@ import prefixer    from 'autoprefixer-stylus';
 import cp          from 'child_process';
 
 var messages = {
-	jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+	jekyllBuild: `<span style="color: grey">Running:</span> $ JEKYLL_ENV=${process.env.JEKYLL_ENV} jekyll build`
 };
 
 var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
@@ -22,7 +22,7 @@ var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
  */
 gulp.task('jekyll-build', async function (done) {
 	browserSync.notify(messages.jekyllBuild);
-	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
+	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit', env: process.env})
 		.on('close', done);
 });
 
