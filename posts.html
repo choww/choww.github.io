@@ -1,0 +1,28 @@
+---
+layout: minimal 
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    {% include head.html %}
+    <body>
+      <h1>Posts</h1>
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <a title="{{ post.title }}" href="{{ site.url }}{{ post.url }}">
+              {{ post.title }}
+              <span class="entry-date">
+              <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+            </a>
+          </li>
+        {% endfor %}
+        <!-- <div class="page_posts"> -->
+          <!-- {% include svg-icons.html %} -->
+          <!-- {% include header-post.html %} -->
+          <!-- {% include tree-posts.html %} -->
+        <!-- </div> -->
+      </ul>
+        {% include scripts.html %}
+    </body>
+</html>

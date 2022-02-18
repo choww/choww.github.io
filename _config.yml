@@ -1,0 +1,60 @@
+# Site settings
+title: Carmen Chow - Infrastructure Developer
+description: "blog"
+baseurl: "" # for test: remove string '/space-jekyll-template' to ''
+url: ""
+# url: "https://choww.github.io"
+
+# User settings
+username: Carmen Chow
+user_title: Infrastructure Developer
+email: carmenchow@protonmail.com
+twitter_username: chowwmein_
+github_username: choww
+linkedin_public_url: carmenchoww
+profile_picture: assets/img/avatar.jpg
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /posts/:title/
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+links:
+  section_1:
+    - title: home
+      url: /
+      key_trigger: 1
+    - title: posts
+      url: /posts
+      key_trigger: 2
+    - title: tags
+      url: /tags
+      key_trigger: 3
+    - title: about
+      url: /about
+      key_trigger: 4
+  section_2:
+    - title: github
+      url: http://www.github.com/choww
+      new_tab: true
+      key_trigger: g
+    - title: twitter
+      url: http://www.twitter.com/chowwmein_
+      key_trigger: t
+  # add section_<n> to add more sections
+
+# projects in header index
+projects:
+  - name: treasury
+    url: https://github.com/choww/treasury
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']

@@ -1,0 +1,101 @@
+html,
+body
+  height 100%
+  background pageBg 
+
+$bg
+  background main
+  height 100%
+  .content
+    width 95%
+    align(both)
+    text-align center
+
+// Header home
+.header-site
+  @extends $bg
+  li
+    margin 0
+    list-style-type none
+  .person
+    img
+      size(130, 130)
+      border-radius 100%
+  .recent
+    +below(320px)
+      &:last-child
+        display none
+    center(400px)
+    p
+      text-align left
+      color white
+    h2,h3
+      font-weight 300
+      text-align left
+    h2
+      color texts
+      font-size rem(20px)
+      &:before
+        content "#"
+        color accent2
+        margin-right 2px
+    a
+      text-decoration none
+      h3
+        font-size rem(17px)
+        color sec 
+        margin 0
+        border-bottom 1px solid rgb(135, 116, 169)
+        &:hover
+          background rgba(135,116,169,0.42)
+
+  h1
+  	color sec
+  	text-align center
+  a.site-title
+    text-decoration none
+    color sec
+    line-height 1
+    display block
+    font-variant-ligatures none 
+    letter-spacing 9px
+    +above(cut)
+      letter-spacing 16px
+      margin-bottom 0
+      font-size rem(25px)
+  .site-description
+    font-size rem(20px)
+    display block
+    margin rem(30px) 0
+    +above(cut)
+      font-size rem(40px)
+
+// Header Post
+.header-post
+	@extends $bg
+	height 62px
+	+above(rem(1450px))
+		background transparent
+		#open
+			position fixed
+			background transparent
+	h2
+		margin 0
+		padding-top 15px
+		text-align center
+		color sec
+		
+//Header Page
+.page-header
+	@extends $bg
+	height 62px
+	h1
+		text-align center
+		text-transform uppercase
+		font-size rem(30px)
+		margin 0 0 30px
+		padding-top 10px
+		color sec
+		font-weight 300
+		+above(cut)
+			font-size rem(30px)

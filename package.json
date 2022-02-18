@@ -1,0 +1,36 @@
+{
+  "name": "choww.github.io",
+  "version": "2.0.0",
+  "description": "Carmen Chow - infrastructure developer",
+  "main": "gulpfile.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [
+    "frontend",
+    "blog",
+    "jekyll",
+    "js",
+    "infrastructure",
+    "sre"
+  ],
+  "author": "Carmen Chow",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-stylus": "^1.0.0",
+    "browser-sync": "^2.27.7",
+    "grunt": "^1.4.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "jeet": "^7.2.0",
+    "kouto-swiss": "^1.1.0",
+    "rupture": "^0.7.1"
+  }
+}
