@@ -31,7 +31,8 @@ $bg
       color white
     h2,h3
       font-weight 300
-      text-align left
+    h3
+      float left
     h2
       color texts
       font-size rem(20px)
@@ -41,11 +42,17 @@ $bg
         margin-right 2px
     a
       text-decoration none
+      .entry-date
+        mainFont(300)
+        float right
+        +below(cut)
+            display none
       h3
+        border-bottom 1px solid rgb(135, 116, 169)
+      h3,.entry-date
         font-size rem(17px)
         color sec 
         margin 0
-        border-bottom 1px solid rgb(135, 116, 169)
         &:hover
           background rgba(135,116,169,0.42)
 

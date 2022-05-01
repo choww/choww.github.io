@@ -8,11 +8,15 @@
     "start": "gulp"
   },
   "keywords": [
-    "frontend",
     "blog",
+    "backend",
+    "dev ops",
+    "developer",
+    "frontend",
+    "infrastructure",
     "jekyll",
     "js",
-    "infrastructure",
+    "kubernetes",
     "sre"
   ],
   "author": "Carmen Chow",

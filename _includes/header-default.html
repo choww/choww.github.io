@@ -37,11 +37,14 @@
           <h2>Recent posts:</h2>
              {% for post in site.posts limit:5%}
                 <li>
-
                   <a title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">
                         <h3 class="post-title" itemprop="name">
                           {{ post.title }}
                         </h3>
+                        <!--
+                        <span class="entry-date">
+                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %d, %y" }}</time>
+                        -->
                     </a>
                 </li>
               {% endfor %}
