@@ -1,7 +1,10 @@
-node_modules
-*.log
-_site
-.sass-cache
-node_modules
 _drafts
+_site
+
+*.log
+
+.DS_STORE
 .jekyll-cache
+.sass-cache
+
+node_modules
